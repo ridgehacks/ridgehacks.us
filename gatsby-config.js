@@ -1,7 +1,7 @@
 module.exports = {
-  siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
-    title: "ridgehacks",
-  },
-  plugins: ["gatsby-plugin-sass"],
+	siteMetadata: {
+		siteUrl: "https://ridgehacks.us",
+		title: "ridgehacks",
+	},
+	plugins: ["gatsby-plugin-sass"],
 };
