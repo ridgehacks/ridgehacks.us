@@ -1,5 +1,31 @@
 .container {
-	padding: 16px;
+	// padding: 8px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	width: 100%;
 	box-sizing: border-box;
+}
+
+.header {
+	width: var(--width);
+	max-width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 64px;
+	position: fixed;
+	top: 0;
+	mix-blend-mode: difference;
+}
+.section {
+	height: 100vh;
+	width: 100%;
+	> * {
+		width: var(--width);
+		max-width: 100%;
+	}
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
