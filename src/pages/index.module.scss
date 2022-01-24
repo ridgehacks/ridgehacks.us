@@ -6,6 +6,7 @@
 	width: 100%;
 	box-sizing: border-box;
 	z-index: 0;
+	scroll-behavior: smooth;
 }
 
 .header {
@@ -28,12 +29,41 @@
 }
 
 .logo {
-	z-index: 10;
+	z-index: 30;
 	position: sticky;
 	top: var(--section-spacing);
 	height: var(--logo-height);
 	margin: var(--section-spacing);
-	fill: var(--text);
+	display: flex;
+	align-items: center;
+	border-radius: calc(0.5 * var(--logo-height));
+	--transition: 240ms cubic-bezier(0.37, 0, 0, 1);
+	transition: var(--transition);
+	gap: 0px;
+	> span {
+		font-size: calc(0.75 * var(--logo-height));
+		width: 0;
+		// opacity: 0;
+		transition: var(--transition);
+		overflow: hidden;
+	}
+	> svg {
+		fill: var(--text);
+		height: 100%;
+	}
+	cursor: pointer;
+}
+
+.scrolled .logo {
+	gap: 8px;
+	padding: calc(0.6 * var(--section-spacing));
+	padding-left: calc(0.5 * var(--logo-height));
+	padding-right: calc(0.5 * var(--logo-height));
+	background-color: var(--bg);
+	> span {
+		width: calc(0.75 * var(--logo-height));
+		opacity: 1;
+	}
 }
 
 .links {
@@ -55,14 +85,14 @@
 
 .sections {
 	width: 100%;
-	// padding-left: var(--section-spacing);
-	// padding-right: var(--section-spacing);
-	// padding-bottom: var(--section-spacing);
-	// gap: calc(1 * var(--section-spacing));
+	padding-left: var(--section-spacing);
+	padding-right: var(--section-spacing);
+	padding-bottom: var(--section-spacing);
+	gap: calc(1 * var(--section-spacing));
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	// background-color: var(--bg);
+	background-color: var(--bg);
 	z-index: 20;
 	position: relative;
 }

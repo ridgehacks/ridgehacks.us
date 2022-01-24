@@ -1,7 +1,7 @@
 import React from "react";
 import * as componentStyle from "./section.module.scss";
 
-export default function Section({ style, bg, children }) {
+export default function Section({ style, bg, id, children }) {
 	function getContrastYIQ(hexColor) {
 		hexColor = hexColor.replace("#", "");
 		var r = parseInt(hexColor.substr(0, 2), 16);
@@ -13,6 +13,7 @@ export default function Section({ style, bg, children }) {
 	return (
 		<div
 			className={componentStyle.section}
+			id={id}
 			style={{
 				backgroundColor: bg,
 				color: bg && getContrastYIQ(bg),

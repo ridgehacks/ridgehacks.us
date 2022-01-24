@@ -9,15 +9,38 @@ const particlesConfig = require("../extras/particles.json");
 
 const IndexPage = () => {
 	// const particlesElemRef = useRef();
-	// useEffect(_ => {
-	// 	particlesJS(particlesElemRef.current, particlesConfig);
-	// }, []);
+	const [isScrolled, setIsScrolled] = useState(false);
+	useEffect(_ => {
+		// particlesJS(particlesElemRef.current, particlesConfig);
+		window.onscroll = _ => {
+			console.log(window.scrollY);
+			setIsScrolled(window.scrollY > 32);
+		};
+	}, []);
 	return (
-		<main className={pageStyle.container}>
+		<main
+			className={
+				pageStyle.container + (isScrolled ? " " + pageStyle.scrolled : "")
+			}
+		>
 			{/* <div ref={particlesElemRef} className={pageStyle.particles} /> */}
 			<Particles className={pageStyle.particles} params={particlesConfig} />
 			{/* <div className={pageStyle.header}> */}
-			<Logo className={pageStyle.logo} />
+			<a
+				className={pageStyle.logo}
+				tabIndex={0}
+				onClick={_ => {
+					// window.location.hash = "";
+					window.scrollTo({
+						top: 0,
+						behavior: "smooth",
+					});
+				}}
+				href="#"
+			>
+				<Logo />
+				<span className="material-icons">expand_less</span>
+			</a>
 			<div className={pageStyle.links}>
 				{/* home, schedule, event details, what is a hackathon? faq sponsors */}
 				<a href="#home">Home</a>
@@ -38,18 +61,18 @@ const IndexPage = () => {
 				{/* <Section bg="#8CEBA5">
 					<h1>this is a section</h1>
 				</Section> */}
-				<Section bg="#EEE5E9">
+				<Section bg="#EEE5E9" id={"home"}>
 					<h1>
 						RidgeHacks 2022{" "}
 						<span style={{ fontWeight: "400" }}> - April 9th</span>{" "}
 					</h1>
 					<p>We're back!</p>
 				</Section>
-				<Section bg="#49808A">
+				<Section bg="#49808A" id={"schedule"}>
 					<h1>Schedule</h1>
 					<p>To be determined! Stay tuned for updates.</p>
 				</Section>
-				<Section bg="#EEE5E9">
+				<Section bg="#EEE5E9" id={"event-details"}>
 					<h1>Details</h1>
 					<p>
 						<strong>Date:</strong> April 9th, 2022
@@ -64,7 +87,7 @@ const IndexPage = () => {
 						<strong>Location:</strong> Ridge High School
 					</p>
 				</Section>
-				<Section bg="#547360">
+				<Section bg="#547360" id={"what-is-a-hackathon"}>
 					<h1>What is a Hackathon?</h1>
 					<p>
 						A hackathon is an event where students individually or
@@ -78,10 +101,10 @@ const IndexPage = () => {
 						the skill level.
 					</p>
 				</Section>
-				<Section bg="#EEE5E9">
+				<Section bg="#EEE5E9" id={"faq"}>
 					<h1>FAQ</h1>
 				</Section>
-				<Section bg="#49808A">
+				<Section bg="#49808A" id={"sponsors"}>
 					<h1>Sponsors</h1>
 				</Section>
 				<Section bg="#EEE5E9">
