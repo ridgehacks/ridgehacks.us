@@ -85,10 +85,10 @@
 
 .sections {
 	width: 100%;
-	padding-left: var(--section-spacing);
-	padding-right: var(--section-spacing);
-	padding-bottom: var(--section-spacing);
-	gap: calc(1 * var(--section-spacing));
+	// padding-left: var(--section-spacing);
+	// padding-right: var(--section-spacing);
+	// padding-bottom: var(--section-spacing);
+	// gap: calc(1 * var(--section-spacing));
 	display: flex;
 	flex-direction: column;
 	align-items: center;

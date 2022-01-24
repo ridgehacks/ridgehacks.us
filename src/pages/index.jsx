@@ -31,10 +31,12 @@ const IndexPage = () => {
 				tabIndex={0}
 				onClick={_ => {
 					// window.location.hash = "";
-					window.scrollTo({
-						top: 0,
-						behavior: "smooth",
-					});
+					setTimeout(() => {
+						window.scrollTo({
+							top: 0,
+							behavior: "smooth",
+						});
+					}, 10);
 				}}
 				href="#"
 			>
@@ -43,7 +45,7 @@ const IndexPage = () => {
 			</a>
 			<div className={pageStyle.links}>
 				{/* home, schedule, event details, what is a hackathon? faq sponsors */}
-				<a href="#home">Home</a>
+				{/* <a href="#home">Home</a> */}
 				<a href="#schedule">Schedule</a>
 				<a href="#event-details">Event Details</a>
 				<a href="#what-is-a-hackathon">What is a Hackathon?</a>
