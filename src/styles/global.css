@@ -1,5 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700&display=swap');
 body {
 	margin: 0;
-	font-family: --apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	font-family: "Urbanist", --apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 	--width: 800px;
+	--text-light: #EEE5E9;
+	--text-dark: #383D36;
+	--section-spacing: 16px;
+	--logo-height: 96px;
+	--text: #EEE5E9;
+	--bg: #383D36;
+	background-color: var(--bg);
+	color: var(--text);
+}
+
+* {
+	box-sizing: border-box;
+}
+
+a {
+	color: inherit;
 }

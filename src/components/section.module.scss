@@ -1,0 +1,26 @@
+.section {
+	// height: calc(100vh - var(--section-spacing) * 2);
+	width: 100%;
+	// max-width: 800px;
+	// border-radius: calc(0.75 * var(--section-spacing));
+	> * {
+		width: var(--width);
+		max-width: 100%;
+	}
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 32px;
+	// margin-top: var(--section-spacing);
+	// margin-bottom: var(--section-spacing);
+	font-size: 1.2em;
+	// transform: translateY(20px) rotate(-3deg);
+	// text-align: center;
+	h1 {
+		font-size: 3rem;
+	};
+	> * {
+		max-width: min(100%, 800px);
+	}
+}
