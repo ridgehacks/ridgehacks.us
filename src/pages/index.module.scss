@@ -102,3 +102,24 @@
 	height: 100%;
 	width: 100%;
 }
+
+@mixin logo-list($logo-width)  {
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	img {
+		max-width: $logo-width;
+		object-fit: contain;
+		padding: 2rem;
+	}
+}
+
+.sponsor-logo-list {
+	@include logo-list(50%);
+}
+
+.past-sponsor-logo-list {
+	@include logo-list(25%);
+}
+

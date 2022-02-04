@@ -24,4 +24,20 @@
 		max-width: min(100%, 800px);
 	}
 	scroll-margin-top: calc(var(--logo-height) + 2 * var(--section-spacing));
+
+	table {
+		border-collapse: collapse;
+		tr {
+			td, th {
+				&:nth-child(1) {
+					width: 10rem;
+				}
+				padding: 10px;
+				text-align: left;
+			}
+			border-bottom: 1px solid var(--text);
+		}
+	}
+
+
 }
