@@ -36,9 +36,11 @@
 	margin: var(--section-spacing);
 	display: flex;
 	align-items: center;
-	border-radius: calc(0.5 * var(--logo-height));
 	--transition: 240ms cubic-bezier(0.37, 0, 0, 1);
-	transition: var(--transition);
+	// background-color: var(--bg);
+	transition: padding var(--transition), gap var(--transition), background-color 120ms;
+	padding-left: calc(0.5 * var(--logo-height));
+	padding-right: calc(0.5 * var(--logo-height));
 	gap: 0px;
 	> span {
 		font-size: calc(0.75 * var(--logo-height));
@@ -56,10 +58,10 @@
 
 .scrolled .logo {
 	gap: 8px;
-	padding: calc(0.6 * var(--section-spacing));
-	padding-left: calc(0.5 * var(--logo-height));
-	padding-right: calc(0.5 * var(--logo-height));
+	padding-top: calc(0.6 * var(--section-spacing));
+	padding-bottom: calc(0.6 * var(--section-spacing));
 	background-color: var(--bg);
+	border-radius: calc(0.5 * var(--logo-height));
 	> span {
 		width: calc(0.75 * var(--logo-height));
 		opacity: 1;
