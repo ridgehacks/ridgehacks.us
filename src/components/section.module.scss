@@ -1,7 +1,7 @@
 .section {
 	// height: calc(100vh - var(--section-spacing) * 2);
 	width: 100%;
-	max-width: 800px;
+	max-width: var(--width);
 	border-radius: calc(0.75 * var(--section-spacing));
 	> * {
 		width: var(--width);
@@ -26,7 +26,7 @@
 		font-size: 3rem;
 	}
 	> * {
-		max-width: min(100%, 800px);
+		max-width: min(100%, var(--width));
 		> * {
 			padding-left: 32px;
 			padding-right: 32px;
