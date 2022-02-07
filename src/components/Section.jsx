@@ -8,7 +8,15 @@ export default function Section({ style, bg, id, children }) {
 		var g = parseInt(hexColor.substr(2, 2), 16);
 		var b = parseInt(hexColor.substr(4, 2), 16);
 		var yiq = (r * 299 + g * 587 + b * 114) / 1000;
-		return yiq >= 128 ? "var(--text-dark)" : "var(--text-light)";
+		return yiq <= 128
+			? {
+					"--text": "var(--text-light)",
+					"--text-translucent": "var(--text-light-translucent)",
+			  }
+			: {
+					"--text": "var(--text-dark)",
+					"--text-translucent": "var(--text-dark-translucent)",
+			  };
 	}
 	return (
 		<div
@@ -16,7 +24,7 @@ export default function Section({ style, bg, id, children }) {
 			id={id}
 			style={{
 				backgroundColor: bg,
-				color: bg && getContrastYIQ(bg),
+				...(getContrastYIQ(bg) || {}),
 				// transform: `translateX(${Math.random() * 6 - 3}px) rotate(${
 				// 	Math.random() * 6 - 3
 				// }deg)`,
