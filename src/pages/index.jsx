@@ -286,18 +286,23 @@ const IndexPage = () => {
 						/>
 						<Organizer
 							fullName="Akhil Vanka"
-							role="Technical Manager of RidgeHacks"
+							role="RidgeHacks Technical Manager"
 							image="akhil.jpg"
-						/>
-						<Organizer
-							fullName="Cy Westbrook"
-							role="RidgeHacks Web Developer"
-							image="cy.jpg"
 						/>
 						<Organizer
 							fullName="Jessica Liu"
 							role="RidgeHacks Graphic Designer"
 							image="jessica.jpg"
+						/>
+						<Organizer
+							fullName="Leilani Johnson"
+							role="RidgeHacks Outreach"
+							image="leilani.jpg"
+						/>
+						<Organizer
+							fullName="Cy Westbrook"
+							role="RidgeHacks Web Developer"
+							image="cy.jpg"
 						/>
 					</div>
 				</Section>
