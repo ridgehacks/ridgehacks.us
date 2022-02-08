@@ -269,34 +269,34 @@ const IndexPage = () => {
 					<h1>The Organizers</h1>
 					<div className={pageStyle.organizersList}>
 						<Organizer
-							fullName="Cy Westbrook"
-							role="75%-stack developer"
-							image="cy.jpg"
-						/>
-						<Organizer
 							fullName="Ramesh Balaji"
-							role="Coffee Server"
-							image="cy.jpg"
-						/>
-						<Organizer
-							fullName="Ben Chee"
-							role="Time Management"
-							image="cy.jpg"
+							role="President of RidgeHacks"
+							image="ramesh.jpg"
 						/>
 						<Organizer
 							fullName="Kevin Li"
-							role="Co-vice treasurer"
-							image="cy.jpg"
+							role="Vice President of RidgeHacks"
+							image="kevin.png"
+						/>
+						<Organizer
+							fullName="Benjamin Chee"
+							role="RidgeHacks Event Organizer"
+							image="Benjamin Chee.png"
 						/>
 						<Organizer
 							fullName="Akhil Vanka"
-							role="Vim Technical Support"
+							role="Technical Manager of RidgeHacks"
+							image="akhil.jpg"
+						/>
+						<Organizer
+							fullName="Cy Westbrook"
+							role="RidgeHacks Web Developer"
 							image="cy.jpg"
 						/>
 						<Organizer
-							fullName="Everyone Else"
-							role="Owed an apology from me"
-							image="cy.jpg"
+							fullName="Jessica Liu"
+							role="RidgeHacks Graphic Designer"
+							image="jessica.jpg"
 						/>
 					</div>
 				</Section>
