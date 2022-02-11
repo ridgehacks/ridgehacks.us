@@ -6,6 +6,7 @@ import LogoFull from "../assets/logoFull.inline.svg";
 import { useState, useEffect, useRef } from "react";
 // import { particlesJS } from "../extras/particles";
 import Particles from "react-tsparticles";
+import Helmet from "react-helmet";
 const particlesConfig = require("../extras/particles.json");
 
 const IndexPage = () => {
@@ -35,6 +36,10 @@ const IndexPage = () => {
 				pageStyle.container + (isScrolled ? " " + pageStyle.scrolled : "")
 			}
 		>
+			<Helmet>
+				<meta charset="utf-8" />
+				<title>RidgeHacks 2022</title>
+			</Helmet>
 			<p className="😡">
 				Why are you looking at inspect element the code is literally on GitHub
 			</p>
@@ -228,11 +233,16 @@ const IndexPage = () => {
 				<Section bg="#EEE5E9" id={"sponsors"}>
 					<h1>Sponsors</h1>
 					<p>Looking to sponsor? Contact us at team@ridgehacks.us.</p>
-					<div class={pageStyle.sponsorLogoList}>
+					<h2>Emerald Sponsors</h2>
+					<div id={"emerald-sponsors"} class={pageStyle.sponsorLogoList}>
+						<img src={`sponsors/digitalocean_2022.svg`} />
+					</div>
+
+					<h2>Silver Sponsors</h2>
+					<div id={"silver-sponsors"} class={pageStyle.sponsorLogoList}>
 						<img src={`sponsors/echo3D.png`} />
 						<img src={`sponsors/aops.png`} />
 					</div>
-
 					<h2>Past Sponsors</h2>
 					<p>
 						RidgeHacks 2019 would not have been possible without these sponsors.
@@ -300,9 +310,19 @@ const IndexPage = () => {
 							image="leilani.jpg"
 						/>
 						<Organizer
+							fullName="Michael Moschello"
+							role="RidgeHacks Outreach"
+							image="michael.jpg"
+						/>
+						<Organizer
 							fullName="Cy Westbrook"
 							role="RidgeHacks Web Developer"
 							image="cy.jpg"
+						/>
+						<Organizer
+							fullName="Jimmy Bao"
+							role="RidgeHacks Treasurer"
+							image="placeholder.jpg"
 						/>
 					</div>
 				</Section>
@@ -310,7 +330,7 @@ const IndexPage = () => {
 			<div className={pageStyle.logoBottom}>
 				<LogoFull />
 				<p>
-					<small>April 9th Ridge High School Hackathon</small> <br />
+					<small>Ridge High School Hackathon, April 9th</small> <br />
 					<small>268 S Finley Ave, Basking Ridge, NJ 07920</small>
 					<br />
 					<small>
