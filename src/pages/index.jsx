@@ -198,6 +198,14 @@ const IndexPage = () => {
 					</div>
 
 					<div>
+						<b>How will teams work?</b>
+						<p>
+							You can work in teams of 2 to 4. If you don't have a team, don't worry!
+							You'll be able to form a team at RidgeHacks with other people looking for teams or teams that want more members before hacking begins.
+						</p>
+					</div>
+
+					<div>
 						<b>How long is the event? When is it? Where is it?</b>
 						<p>
 							It's on April 9th, 2022 from 8:00AM-10:30PM. It's at Ridge High
@@ -205,6 +213,7 @@ const IndexPage = () => {
 							<a href="#event-details">here</a>.
 						</p>
 					</div>
+
 					<div>
 						<b>What can I make?</b>
 						<p>
