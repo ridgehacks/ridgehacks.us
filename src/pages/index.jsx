@@ -79,6 +79,7 @@ const IndexPage = () => {
 						<span style={{ fontWeight: "400" }}> - April 9th, 2022</span>{" "}
 					</h1>
 					<h3><a target="_" href="https://tally.so/r/mDPyNm">Sign Up!</a></h3>
+					<h3><a target="_" href="https://discord.gg/zMjdnDjcfA">Join the Discord</a></h3>
 					<p>
 						After the pandemic forced us to cancel RidgeHacks 2020 and 2021,{" "}
 						<b>we're back!</b> <br />
