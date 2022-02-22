@@ -250,6 +250,7 @@ const IndexPage = () => {
 					<h2>Silver Sponsors</h2>
 					<div id={"silver-sponsors"} class={pageStyle.sponsorLogoList}>
 						<img src={`sponsors/echo3D.png`} />
+						<img src={`sponsors/WegmansLogo.min.svg`} />
 						<img src={`sponsors/aops.png`} />
 					</div>
 					<h2>Past Sponsors</h2>
