@@ -192,9 +192,7 @@ const IndexPage = () => {
 					<div>
 						<b>Where do we get updates/communicate with y'all?</b>
 						<p>
-							Discord! Make sure to join our server, which we're still setting
-							up and will post here soon. We'll be using the platform to send
-							updates before and during the event.{" "}
+							Discord! Make sure to join our server <a href="https://discord.gg/zMjdnDjcfA">here</a>.{" "}
 						</p>
 					</div>
 
@@ -245,15 +243,15 @@ const IndexPage = () => {
 					<p>Looking to sponsor? Contact us at team@ridgehacks.us.</p>
 					<h2>Emerald Sponsors</h2>
 					<div id={"emerald-sponsors"} class={pageStyle.sponsorLogoList}>
-						<img src={`sponsors/digitalocean_2022.svg`} />
+						<a href="https://www.digitalocean.com/" target="_"><img src={`sponsors/digitalocean_2022.svg`} /></a>
 					</div>
 
 					<h2>Silver Sponsors</h2>
 					<div id={"silver-sponsors"} class={pageStyle.sponsorLogoList}>
-						<img src={`sponsors/leading-learners.png`} />
-						<img src={`sponsors/echo3D.png`} />
-						<img src={`sponsors/WegmansLogo.min.svg`} />
-						<img src={`sponsors/aops.png`} />
+						<a href="https://www.leading-learners.com/" target="_"><img src={`sponsors/leading-learners.png`} /></a>
+						<a href="https://www.echo3d.co/" target="_"><img src={`sponsors/echo3D.png`} /></a>
+						<a href="https://www.wegmans.com/" target="_"><img src={`sponsors/WegmansLogo.min.svg`} /></a>
+						<a href="https://www.artofproblemsolving.com/" target="_"><img src={`sponsors/aops.png`} /></a>
 					</div>
 					<h2>Past Sponsors</h2>
 					<p>

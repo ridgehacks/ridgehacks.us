@@ -106,6 +106,12 @@
 	width: 100%;
 }
 
+@mixin responsive-grid-child($max-width) {
+	width: 100%;
+	max-height: calc($max-width * 0.5);
+	object-fit: contain;
+}
+
 @mixin responsive-grid($max-width) {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(min($max-width, 100%), 1fr));
@@ -116,9 +122,7 @@
 	align-content: center;
 
 	> * {
-		width: 100%;
-		max-height: calc($max-width * 0.5);
-		object-fit: contain;
+		@include responsive-grid-child($max-width);
 	}
 }
 
@@ -142,11 +146,19 @@
 
 .sponsor-logo-list {
 	@include responsive-grid(250px);
+
+	a img {
+		@include responsive-grid-child(250px);
+	}
 }
 
 
 .past-sponsor-logo-list {
 	@include responsive-grid(150px);
+
+	a img {
+		@include responsive-grid-child(150px);
+	}
 }
 
 .organizersList {
