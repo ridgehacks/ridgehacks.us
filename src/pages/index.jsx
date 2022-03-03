@@ -33,8 +33,12 @@ const IndexPage = () => {
 	const FaqElement = ({ summary, children }) => {
 		return (
 			<>
-				<strong>{summary}</strong>
-				{children}
+				{/* <strong>{summary}</strong>
+				{children} */}
+				<details className={pageStyle.faqElement}>
+					<summary>{summary}</summary>
+					{children}
+				</details>
 			</>
 		);
 	};

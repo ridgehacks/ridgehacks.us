@@ -152,7 +152,6 @@
 	}
 }
 
-
 .past-sponsor-logo-list {
 	@include responsive-grid(150px);
 
@@ -209,4 +208,8 @@
 	> * {
 		margin: 0;
 	}
+}
+
+.faqElement {
+	margin-bottom: 8px;
 }
