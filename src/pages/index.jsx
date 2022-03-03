@@ -30,6 +30,14 @@ const IndexPage = () => {
 			</div>
 		);
 	};
+	const FaqElement = ({ summary, children }) => {
+		return (
+			<>
+				<strong>{summary}</strong>
+				{children}
+			</>
+		);
+	};
 	return (
 		<main
 			className={
@@ -78,8 +86,16 @@ const IndexPage = () => {
 						RidgeHacks 2022{" "}
 						<span style={{ fontWeight: "400" }}> - April 9th, 2022</span>{" "}
 					</h1>
-					<h3><a target="_" href="https://tally.so/r/mDPyNm">Sign Up!</a></h3>
-					<h3><a target="_" href="https://discord.gg/zMjdnDjcfA">Join the Discord</a></h3>
+					<h3>
+						<a target="_" href="https://tally.so/r/mDPyNm">
+							Sign Up!
+						</a>
+					</h3>
+					<h3>
+						<a target="_" href="https://discord.gg/zMjdnDjcfA">
+							Join the Discord
+						</a>
+					</h3>
 					<p>
 						After the pandemic forced us to cancel RidgeHacks 2020 and 2021,{" "}
 						<b>we're back!</b> <br />
@@ -189,69 +205,82 @@ const IndexPage = () => {
 				<Section bg="#49808A" id={"faq"}>
 					<h1>FAQ</h1>
 
-					<div>
-						<b>Where do we get updates/communicate with y'all?</b>
+					<FaqElement
+						summary={"Where do we get updates/communicate with y'all?"}
+					>
 						<p>
-							Discord! Make sure to join our server <a href="https://discord.gg/zMjdnDjcfA">here</a>.{" "}
+							Discord! Make sure to join our server{" "}
+							<a href="https://discord.gg/zMjdnDjcfA">here</a>.{" "}
 						</p>
-					</div>
+					</FaqElement>
 
-					<div>
-						<b>How will teams work?</b>
+					<FaqElement summary={"How will teams work?"}>
 						<p>
-							You can work in teams of 2 to 4. If you don't have a team, don't worry!
-							You'll be able to form a team at RidgeHacks with other people looking for teams or teams that want more members before hacking begins.
+							You can work in teams of 2 to 4. If you don't have a team, don't
+							worry! You'll be able to form a team at RidgeHacks with other
+							people looking for teams or teams that want more members before
+							hacking begins.
 						</p>
-					</div>
+					</FaqElement>
 
-					<div>
-						<b>How long is the event? When is it? Where is it?</b>
+					<FaqElement
+						summary={"How long is the event? When is it? Where is it?"}
+					>
 						<p>
 							It's on April 9th, 2022 from 8:00AM-10:30PM. It's at Ridge High
 							School. You can find the address for our hackathon{" "}
 							<a href="#event-details">here</a>.
 						</p>
-					</div>
+					</FaqElement>
 
-					<div>
-						<b>What can I make?</b>
+					<FaqElement summary={"What can I make?"}>
 						<p>
 							Anything. Software, hardware, middleware, malware, anything that
 							ends with “ware” and starts with you typing lines of code. And
 							even more than that.
 						</p>
-					</div>
-					<div>
-						<b>What's in it for me?</b>
+					</FaqElement>
+
+					<FaqElement summary={"What's in it for me?"}>
 						<p>
 							Well, the clout and prestige of winning RidgeHacks. And of course,
 							we do have prizes. You'll have to show up to find out what they
 							are though.
 						</p>
-					</div>
-					<div>
-						<b>Anything else?</b>
+					</FaqElement>
+
+					<FaqElement summary={"Anything else?"}>
 						<p>
 							Send us a message on Discord in the #FAQ channel. You can also
 							send us an email at{" "}
 							<a href="mailto:team@ridgehacks.us">team@ridgehacks.us</a>.
 						</p>
-					</div>
+					</FaqElement>
 				</Section>
 				<Section bg="#EEE5E9" id={"sponsors"}>
 					<h1>Sponsors</h1>
 					<p>Looking to sponsor? Contact us at team@ridgehacks.us.</p>
 					<h2>Emerald Sponsors</h2>
 					<div id={"emerald-sponsors"} class={pageStyle.sponsorLogoList}>
-						<a href="https://www.digitalocean.com/" target="_"><img src={`sponsors/digitalocean_2022.svg`} /></a>
+						<a href="https://www.digitalocean.com/" target="_">
+							<img src={`sponsors/digitalocean_2022.svg`} />
+						</a>
 					</div>
 
 					<h2>Silver Sponsors</h2>
 					<div id={"silver-sponsors"} class={pageStyle.sponsorLogoList}>
-						<a href="https://www.leading-learners.com/" target="_"><img src={`sponsors/leading-learners.png`} /></a>
-						<a href="https://www.echo3d.co/" target="_"><img src={`sponsors/echo3D.png`} /></a>
-						<a href="https://www.wegmans.com/" target="_"><img src={`sponsors/WegmansLogo.min.svg`} /></a>
-						<a href="https://www.artofproblemsolving.com/" target="_"><img src={`sponsors/aops.png`} /></a>
+						<a href="https://www.leading-learners.com/" target="_">
+							<img src={`sponsors/leading-learners.png`} />
+						</a>
+						<a href="https://www.echo3d.co/" target="_">
+							<img src={`sponsors/echo3D.png`} />
+						</a>
+						<a href="https://www.wegmans.com/" target="_">
+							<img src={`sponsors/WegmansLogo.min.svg`} />
+						</a>
+						<a href="https://www.artofproblemsolving.com/" target="_">
+							<img src={`sponsors/aops.png`} />
+						</a>
 					</div>
 					<h2>Past Sponsors</h2>
 					<p>
