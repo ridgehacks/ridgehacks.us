@@ -269,6 +269,9 @@ const IndexPage = () => {
 
 					<h2>Silver Sponsors</h2>
 					<div id={"silver-sponsors"} class={pageStyle.sponsorLogoList}>
+						<a href="https://www.ridgemarketing.com/" target="_">
+							<img src={`sponsors/ridge_marketing.png`} />
+						</a>
 						<a href="https://www.leading-learners.com/" target="_">
 							<img src={`sponsors/leading-learners.png`} />
 						</a>
