@@ -49,7 +49,8 @@ const IndexPage = () => {
 				<title>RidgeHacks 2022</title>
 			</Helmet>
 			<p className="😡">
-				Why are you looking at inspect element the code is literally on GitHub
+				Why are you looking at inspect element the code is literally on GitHub:
+				https://github.com/ridgehacks/ridgehacks.us
 			</p>
 			{/* <div ref={particlesElemRef} className={pageStyle.particles} /> */}
 			{/* <Particles className={pageStyle.particles} params={particlesConfig} /> */}
@@ -109,7 +110,8 @@ const IndexPage = () => {
 				<Section bg="#49808A" id={"schedule"}>
 					<h1>Schedule</h1>
 					<p>
-						We know tables are hard to read (hell, they're hard to make), but every little workshop or event can be found here!
+						We know tables are hard to read (hell, they're hard to make), but
+						every little workshop or event can be found here!
 					</p>
 					<table className={pageStyle.scheduleTable}>
 						<tr>
