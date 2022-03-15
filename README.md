@@ -1,4 +1,4 @@
 # ridgehacks
-the ridgehacks website.
-ridgehacks.us
+the [ridgehacks](https://ridgehacks.us) website.
+
 sign up now (pls)
