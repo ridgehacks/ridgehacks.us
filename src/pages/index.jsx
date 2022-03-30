@@ -278,6 +278,12 @@ const IndexPage = () => {
 						</a>
 					</div>
 
+					<h2>Gold Sponsors</h2>
+					<div id={"gold-sponsors"} class={pageStyle.sponsorLogoList}>
+						<a href="https://www.hokecapital.com/" target="_">
+							<img src={`sponsors/hcmlogo-bg.png`} />
+						</a>
+					</div>
 					<h2>Silver Sponsors</h2>
 					<div id={"silver-sponsors"} class={pageStyle.sponsorLogoList}>
 						<a href="https://www.njspba.com/" target="_">
