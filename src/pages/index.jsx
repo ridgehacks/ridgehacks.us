@@ -49,7 +49,8 @@ const IndexPage = () => {
 				<title>RidgeHacks 2022</title>
 			</Helmet>
 			<p className="😡">
-				Why are you looking at inspect element the code is literally on GitHub
+				Why are you looking at inspect element the code is literally on GitHub:
+				https://github.com/ridgehacks/ridgehacks.us
 			</p>
 			{/* <div ref={particlesElemRef} className={pageStyle.particles} /> */}
 			{/* <Particles className={pageStyle.particles} params={particlesConfig} /> */}
@@ -109,15 +110,17 @@ const IndexPage = () => {
 				<Section bg="#49808A" id={"schedule"}>
 					<h1>Schedule</h1>
 					<p>
-						The schedule here is pretty preliminary, so stay tuned for future
-						updates.
+						We know tables are hard to read (hell, they're hard to make), but
+						every little workshop or event can be found here!
 					</p>
 					<table className={pageStyle.scheduleTable}>
 						<tr>
 							<th>Time</th>
-							<th>Hacking/Main Areas</th>
-							<th>Location 1</th>
-							<th>Location 2</th>
+							<th>Hacking Area/PAC</th>
+							<th>L.H. 1</th>
+							<th>L.H. 2</th>
+							<th>Atrium</th>
+							<th>Room 701</th>
 						</tr>
 						<tr>
 							<td>8:00 AM</td>
@@ -127,31 +130,39 @@ const IndexPage = () => {
 							<td>8:30 AM</td>
 							<td>Start Hacking/Breakfast</td>
 							<td>echo3D Workshop</td>
+							<td>Unity Workshop</td>
 						</tr>
 						<tr>
 							<td>10:00 AM</td>
 							<td>Continue Hacking!</td>
-							<td></td>
 							<td>Git Workshop</td>
+							<td>Web Development Workshop</td>
 						</tr>
 						<tr>
 							<td>12:00 PM</td>
 							<td>Lunch</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td>Smash Tournament (Join After Eating)</td>
 						</tr>
 						<tr>
 							<td>2:00 PM</td>
 							<td>Continue Hacking!</td>
-							<td></td>
-							<td>Intro to Unity</td>
+							<td>Cyber Security Workshop</td>
 						</tr>
 						<tr>
 							<td>4:00 PM</td>
 							<td>Continue Hacking!</td>
+							<td></td>
 							<td>Consumer Electronics/Device Repair Workshop</td>
 							<td></td>
 						</tr>
 						<tr>
 							<td>5:30 PM</td>
+							<td>Continue Hacking!</td>
+							<td></td>
+							<td></td>
 							<td>Cup Stacking</td>
 						</tr>
 						<tr>
