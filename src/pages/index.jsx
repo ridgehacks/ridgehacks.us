@@ -269,6 +269,12 @@ const IndexPage = () => {
 
 					<h2>Silver Sponsors</h2>
 					<div id={"silver-sponsors"} class={pageStyle.sponsorLogoList}>
+						<a href="https://www.njspba.com/" target="_">
+							<img src={`sponsors/NJSPBA.png`} />
+						</a>
+						<a href="https://www.perrottis.com" target="_">
+							<img src={`sponsors/perrottis.png`} />
+						</a>
 						<a href="https://www.ridgemarketing.com/" target="_">
 							<img src={`sponsors/ridge_marketing.png`} />
 						</a>
