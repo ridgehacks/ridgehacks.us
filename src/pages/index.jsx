@@ -130,7 +130,7 @@ const IndexPage = () => {
 							<td>8:30 AM</td>
 							<td>Start Hacking/Breakfast</td>
 							<td>echo3D Workshop</td>
-							<td>Unity Workshop</td>
+							<td>Python Workshop</td>
 						</tr>
 						<tr>
 							<td>10:00 AM</td>
