@@ -196,7 +196,8 @@ const IndexPage = () => {
 						the soul-crushing act of typing on laptop keyboards all day.
 						<br />
 						<strong>Location:</strong> Ridge High School (268 South Finley
-						Avenue, Basking Ridge, NJ)
+						Avenue, Basking Ridge, NJ). <strong>See the FAQ for details on where to enter (and park if you 
+						plan on driving yourself).</strong>
 					</p>
 				</Section>
 				<Section bg="#547360" id={"what-is-a-hackathon"}>
@@ -215,6 +216,14 @@ const IndexPage = () => {
 				</Section>
 				<Section bg="#49808A" id={"faq"}>
 					<h1>FAQ</h1>
+
+					<FaqElement
+						summary={"Where can I park/where do I enter the building?"}
+					>
+						<p> Please consult this image for more information (you can put this into perspective by looking at Google Maps or similar). 
+						</p>
+						<img className={pageStyle.ridgeMap} src={"/ridgemap.jpg"} /> <br/><br/>
+					</FaqElement>
 
 					<FaqElement
 						summary={"Where do we get updates/communicate with y'all?"}
@@ -287,7 +296,7 @@ const IndexPage = () => {
 					<h2>Silver Sponsors</h2>
 					<div id={"silver-sponsors"} class={pageStyle.sponsorLogoList}>
 						<a href="https://www.njspba.com/" target="_">
-							<img src={`sponsors/NJSPBA.png`} />
+							<img src={`sponsors/PBA.png`} />
 						</a>
 						<a href="https://www.perrottis.com" target="_">
 							<img src={`sponsors/perrottis.png`} />
