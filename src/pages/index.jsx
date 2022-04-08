@@ -89,7 +89,7 @@ const IndexPage = () => {
 					</h1>
 					<h3>
 						<p>
-							Sign ups are now closed. See you on Saturday!
+							Sign-ups are now closed. See you on Saturday!
 						</p>
 					</h3>
 					<h3>
