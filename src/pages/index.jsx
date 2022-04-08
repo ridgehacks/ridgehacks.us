@@ -88,9 +88,9 @@ const IndexPage = () => {
 						<span style={{ fontWeight: "400" }}> - April 9th, 2022</span>{" "}
 					</h1>
 					<h3>
-						<a target="_" href="https://tally.so/r/mDPyNm">
-							Sign Up!
-						</a>
+						<p>
+							Sign ups are now closed. See you on Saturday!
+						</p>
 					</h3>
 					<h3>
 						<a target="_" href="https://discord.gg/zMjdnDjcfA">
