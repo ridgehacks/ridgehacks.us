@@ -97,6 +97,16 @@ const IndexPage = () => {
 							Join the Discord
 						</a>
 					</h3>
+					<h3>
+						<a target="_" href="https://docs.google.com/document/d/1LD-tjCdM66slnRXtEXL7zmERoTjRsonuajGBMj7sdLE/edit?usp=sharing">
+							SCORING RUBRIC
+						</a>
+					</h3>
+					<h3>
+						<a target="_" href="https://tally.so/r/nr7O5m">
+							SUMBISSION FORM
+						</a>
+					</h3>
 					<p>
 						After the pandemic forced us to cancel RidgeHacks 2020 and 2021,{" "}
 						<b>we're back!</b> <br />
