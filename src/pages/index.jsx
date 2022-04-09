@@ -49,7 +49,8 @@ const IndexPage = () => {
 				<title>RidgeHacks 2022</title>
 			</Helmet>
 			<p className="😡">
-				Why are you looking at inspect element the code is literally on GitHub
+				Why are you looking at inspect element the code is literally on GitHub:
+				https://github.com/ridgehacks/ridgehacks.us
 			</p>
 			{/* <div ref={particlesElemRef} className={pageStyle.particles} /> */}
 			{/* <Particles className={pageStyle.particles} params={particlesConfig} /> */}
@@ -87,9 +88,9 @@ const IndexPage = () => {
 						<span style={{ fontWeight: "400" }}> - April 9th, 2022</span>{" "}
 					</h1>
 					<h3>
-						<a target="_" href="https://tally.so/r/mDPyNm">
-							Sign Up!
-						</a>
+						<p>
+							Sign-ups are now closed. See you on Saturday!
+						</p>
 					</h3>
 					<h3>
 						<a target="_" href="https://discord.gg/zMjdnDjcfA">
@@ -109,8 +110,8 @@ const IndexPage = () => {
 				<Section bg="#49808A" id={"schedule"}>
 					<h1>Schedule</h1>
 					<p>
-						The schedule here is pretty preliminary, so stay tuned for future
-						updates.
+						We know tables are hard to read (hell, they're hard to make), but
+						every little workshop or event can be found here!
 					</p>
 					<table className={pageStyle.scheduleTable}>
 						<tr>
@@ -127,31 +128,39 @@ const IndexPage = () => {
 							<td>8:30 AM</td>
 							<td>Start Hacking/Breakfast</td>
 							<td>echo3D Workshop</td>
+							<td>Python Workshop</td>
 						</tr>
 						<tr>
 							<td>10:00 AM</td>
 							<td>Continue Hacking!</td>
-							<td></td>
 							<td>Git Workshop</td>
+							<td>Web Development Workshop</td>
 						</tr>
 						<tr>
 							<td>12:00 PM</td>
 							<td>Lunch</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td>Smash Tournament (Join After Eating)</td>
 						</tr>
 						<tr>
 							<td>2:00 PM</td>
 							<td>Continue Hacking!</td>
-							<td></td>
-							<td>Intro to Unity</td>
+							<td>Cyber Security Workshop</td>
 						</tr>
 						<tr>
 							<td>4:00 PM</td>
 							<td>Continue Hacking!</td>
+							<td></td>
 							<td>Consumer Electronics/Device Repair Workshop</td>
 							<td></td>
 						</tr>
 						<tr>
 							<td>5:30 PM</td>
+							<td>Continue Hacking!</td>
+							<td></td>
+							<td></td>
 							<td>Cup Stacking</td>
 						</tr>
 						<tr>
@@ -185,7 +194,8 @@ const IndexPage = () => {
 						the soul-crushing act of typing on laptop keyboards all day.
 						<br />
 						<strong>Location:</strong> Ridge High School (268 South Finley
-						Avenue, Basking Ridge, NJ)
+						Avenue, Basking Ridge, NJ). <strong>See the FAQ for details on where to enter (and park if you 
+						plan on driving yourself).</strong>
 					</p>
 				</Section>
 				<Section bg="#547360" id={"what-is-a-hackathon"}>
@@ -204,6 +214,14 @@ const IndexPage = () => {
 				</Section>
 				<Section bg="#49808A" id={"faq"}>
 					<h1>FAQ</h1>
+
+					<FaqElement
+						summary={"Where can I park/where do I enter the building?"}
+					>
+						<p> Please consult this image for more information (you can put this into perspective by looking at Google Maps or similar). 
+						</p>
+						<img className={pageStyle.ridgeMap} src={"/ridgemap.jpg"} /> <br/><br/>
+					</FaqElement>
 
 					<FaqElement
 						summary={"Where do we get updates/communicate with y'all?"}
@@ -267,8 +285,23 @@ const IndexPage = () => {
 						</a>
 					</div>
 
+					<h2>Gold Sponsors</h2>
+					<div id={"gold-sponsors"} class={pageStyle.sponsorLogoList}>
+						<a href="https://www.hokecapital.com/" target="_">
+							<img src={`sponsors/hcmlogo-bg.png`} />
+						</a>
+					</div>
 					<h2>Silver Sponsors</h2>
 					<div id={"silver-sponsors"} class={pageStyle.sponsorLogoList}>
+						<a href="https://www.njspba.com/" target="_">
+							<img src={`sponsors/PBA.png`} />
+						</a>
+						<a href="https://www.perrottis.com" target="_">
+							<img src={`sponsors/perrottis.png`} />
+						</a>
+						<a href="https://www.ridgemarketing.com/" target="_">
+							<img src={`sponsors/ridge_marketing.png`} />
+						</a>
 						<a href="https://www.leading-learners.com/" target="_">
 							<img src={`sponsors/leading-learners.png`} />
 						</a>
