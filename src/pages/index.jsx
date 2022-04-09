@@ -119,6 +119,8 @@ const IndexPage = () => {
 							<th>Hacking/Main Areas</th>
 							<th>Lecture Hall A</th>
 							<th>Room 701</th>
+							<th>Atrium</th>
+							<th>Cafeteria</th>
 						</tr>
 						<tr>
 							<td>8:00 AM</td>
